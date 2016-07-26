@@ -20,17 +20,24 @@
       <li>BodyPartOrImplant</li>
     </tradeTags>
     <comps>
-      <li>
-        <compClass>CompForbiddable</compClass>
-      </li>
+      <li Class="CompProperties_Forbiddable"/>
     </comps>
-    <thingCategories>
-      <li>BodyPartsAndImplants</li>
-    </thingCategories>
     <pathCost>10</pathCost>
   </ThingDef>
+
+  <ThingDef ParentName="BodyPartBase" Name="BodyPartNaturalBase" Abstract="True">
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="BodyPartBase" Name="BodyPartArtificialBase" Abstract="True">
+    <thingCategories>
+      <li>BodyPartsArtificial</li>
+    </thingCategories>
+  </ThingDef>
     
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BodyPartNaturalBase">
     <defName>eye</defName>
     <label>Eye ball</label>
     <description>A human eye ball.</description>
@@ -43,7 +50,7 @@
     </statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BodyPartNaturalBase">
     <defName>ear</defName>
     <label>Ear</label>
     <description>A human ear.</description>
@@ -56,7 +63,7 @@
     </statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BodyPartNaturalBase">
     <defName>nose</defName>
     <label>Nose</label>
     <description>A human nose.</description>
@@ -69,7 +76,7 @@
     </statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BodyPartNaturalBase">
     <defName>jaw</defName>
     <label>Jaw</label>
     <description>A human jawbone.</description>
@@ -82,7 +89,7 @@
     </statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BodyPartNaturalBase">
     <defName>stomach</defName>
     <label>Stomach</label>
     <description>A human stomach.</description>
@@ -95,7 +102,7 @@
     </statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BodyPartNaturalBase">
     <defName>spine</defName>
     <label>Spine</label>
     <description>A human spine.</description>
@@ -108,7 +115,7 @@
     </statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BodyPartBase">
+  <ThingDef ParentName="BodyPartNaturalBase">
     <defName>pelvis</defName>
     <label>Pelvis</label>
     <description>A human pelvis.</description>
